@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+    font-family: 'Young Serif', serif;
+}
+.navbar{
+    color: rgb(104, 101, 101);
+    
+    
+}
+.hero{
+    background-image: url(./img/cover.jpg);
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+     position: relative;
+     z-index: 2;
+
+}
+.hero::after{
+    content: "";
+    background-color: rgba(21, 20, 51, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+.btn{
+    padding: 15px;
+    border-radius: 0;
+   
+}
+
+.services{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+}
+.service_card {
+    background-color: #fff;
+    padding: 35px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    transition: all 0.35s ease;
+    position: relative;
+    z-index: 2;
+}
+.service_p{
+    color: rgb(151, 149, 149);
+}
+.service_card::before{
+    content: "";
+    position: absolute;
+    background-color: #0d6efd;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.35s ease;
+}
+.service_card:hover::before{
+  height: 100%;
+}
+.service_card:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+
+}
+.service_card:hover h5,
+.service_card:hover p {
+    color: #fff;
+}
+.service_card:hover .iconBox{
+    background-color: #fff;
+    color: #0d6efd;
+}
+.iconBox{
+    
+    width: 54px;
+    height: 54px;
+    background-color:#0d6efd;
+    color:#fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.iconBox i{
+    font-size: 32px;
+}
