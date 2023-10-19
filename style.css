@@ -41,8 +41,10 @@
     margin: auto;
     padding-top: 120px;
     padding-bottom: 120px;
+    background-color: red;
     
-}
+} 
+
 .service_card {
     background-color: #fff;
     padding: 35px;
@@ -51,7 +53,7 @@
     position: relative;
     z-index: 2;
 }
-.service_p{
+.service_p ,.business_p{
     color: rgb(151, 149, 149);
 }
 .service_card::before{
@@ -81,7 +83,7 @@
     background-color: #fff;
     color: #0d6efd;
 }
-.iconBox{
+.iconBox ,.feature_icon{
     
     width: 54px;
     height: 54px;
@@ -92,7 +94,20 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    flex: none;
 }
-.iconBox i{
+.iconBox i ,.feature_icon i{
     font-size: 32px;
+}
+
+/* business section */
+.col-img{
+    background-image: url(img/cover2.jpg);
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    
+}
+#feature{
+    margin-top: 100px;
 }
