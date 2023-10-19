@@ -45,7 +45,7 @@
     
 } 
 
-.service_card {
+.service_card ,.pricing {
     background-color: #fff;
     padding: 35px;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
@@ -56,7 +56,7 @@
 .service_p ,.business_p{
     color: rgb(151, 149, 149);
 }
-.service_card::before{
+.service_card::before {
     content: "";
     position: absolute;
     background-color: #0d6efd;
@@ -70,7 +70,7 @@
 .service_card:hover::before{
   height: 100%;
 }
-.service_card:hover{
+.service_card:hover ,.pricing:hover{
     box-shadow: none;
     transform: translateY(5px);
 
@@ -149,4 +149,10 @@
 .img-resize{
     height: 290px;
     object-fit: cover;
+}
+
+/* pricing */
+
+.pricing .bx{
+    color: #0d6efd;
 }
