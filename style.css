@@ -156,3 +156,74 @@
 .pricing .bx{
     color: #0d6efd;
 }
+
+/* team */
+.team_img{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+  
+   
+  
+}
+.team_img img{
+    width: 100%;
+    border-radius: 50%;
+}
+.team_card{
+    box-shadow:  0 8px 22px rgba(0, 0, 0, 0.1);
+   padding-top: 30px;
+   padding-bottom: 20px;
+   transition: all 0.35s ease;
+
+}
+.team_card:hover{
+    box-shadow: none;
+}
+.team_icons{
+    display: flex;
+    justify-content: center;
+}
+.team_icons a{
+    width: 34px;
+    height: 34px;
+    color: #fff;
+    font-size: 20px;
+    background-color: #0d6efd;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.team_icons a:hover{
+    background-color: #fff;
+    color: #0d6efd;
+    border: 2px solid #0d6efd;
+}
+.blog_img{
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.blog_card  img{
+    width: 100%;
+} 
+.blog_card{
+    padding: 20px;
+    background-color: #fff;
+    box-shadow:  0 8px 22px rgba(0, 0, 0, 0.1);
+    transition: all 0.34s ease;
+}
+.blog_card:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.blog_card h5:hover{
+    color: #0d6efd;
+}
+
